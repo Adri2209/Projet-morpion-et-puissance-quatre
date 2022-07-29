@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/stylepuissancequatre.css">
+    <title>JEU PUISSANCE QUATRE</title>
+</head>
+<body>
+    <header>
+        <h1>Jeu Puissance Quatre</h1>
+    </header>
+    <main>
+        <div class="center">
+            <div>
+                <span id="switchSentence">Tour du joueur 1</span>
+            </div>
+            <label class="switch">
+                <input type="checkbox" onclick="modeCpu()" >
+                <span class="slider round"></span>
+             </label>
+        </div>
+        <span id="moncercleun">J1</span>
+        <span id="moncercledeux">J2</span>
+        <P>
+        <a href="indexmorpion.html" class="lien">Aller jouer au morpion</a>
+    </P>
+        <div>
+            <table class="rond">
+                <tr>
+                    <td onclick="displaySymbol(this)"></td>
+                    <td onclick="displaySymbol(this)"></td>
+                    <td onclick="displaySymbol(this)"></td>
+                    <td onclick="displaySymbol(this)"></td>
+                    <td onclick="displaySymbol(this)"></td>
+                    <td onclick="displaySymbol(this)"></td>
+                    <td onclick="displaySymbol(this)"></td>
+                </tr>  
+                <tr>
+                    <td onclick="displaySymbol(this)"></td>
+                    <td onclick="displaySymbol(this)"></td>
+                    <td onclick="displaySymbol(this)"></td>
+                    <td onclick="displaySymbol(this)"></td>
+                    <td onclick="displaySymbol(this)"></td>
+                    <td onclick="displaySymbol(this)"></td>
+                    <td onclick="displaySymbol(this)"></td>
+                </tr> 
+                <tr>
+                    <td onclick="displaySymbol(this)"></td>
+                    <td onclick="displaySymbol(this)"></td>
+                    <td onclick="displaySymbol(this)"></td>
+                    <td onclick="displaySymbol(this)"></td>
+                    <td onclick="displaySymbol(this)"></td>
+                    <td onclick="displaySymbol(this)"></td>
+                    <td onclick="displaySymbol(this)"></td>
+                </tr>   
+                <tr>
+                    <td onclick="displaySymbol(this)"></td>
+                    <td onclick="displaySymbol(this)"></td>
+                    <td onclick="displaySymbol(this)"></td>
+                    <td onclick="displaySymbol(this)"></td>
+                    <td onclick="displaySymbol(this)"></td>
+                    <td onclick="displaySymbol(this)"></td>
+                    <td onclick="displaySymbol(this)"></td>
+                </tr>   
+                <tr>
+                    <td onclick="displaySymbol(this)"></td>
+                    <td onclick="displaySymbol(this)"></td>
+                    <td onclick="displaySymbol(this)"></td>
+                    <td onclick="displaySymbol(this)"></td>
+                    <td onclick="displaySymbol(this)"></td>
+                    <td onclick="displaySymbol(this)"></td>
+                    <td onclick="displaySymbol(this)"></td>
+                </tr>   
+                <tr>
+                    <td onclick="displaySymbol(this)"></td>
+                    <td onclick="displaySymbol(this)"></td>
+                    <td onclick="displaySymbol(this)"></td>
+                    <td onclick="displaySymbol(this)"></td>
+                    <td onclick="displaySymbol(this)"></td>
+                    <td onclick="displaySymbol(this)"></td>
+                    <td onclick="displaySymbol(this)"></td>
+                </tr>      
+            </table>
+            <table class="colonne">
+                <tr>
+                    <th class="taille">Colonne 1</th>
+                    <th class="taille">Colonne 2</th>
+                    <th class="taille">Colonne 3</th>
+                    <th class="taille">Colonne 4</th>
+                    <th class="taille">Colonne 5</th>
+                    <th class="taille">Colonne 6</th>
+                    <th class="taille">Colonne 7</th>
+                </tr>
+            </table>
+        </div>
+        <p class="center"></p>
+        <form>
+        <button type="button" onclick="restart()">RESTART</button>
+        </form>
+    </main>
+    <script src="assets/js/mainpuissancequatre.js"></script>
+</body>
+</html>

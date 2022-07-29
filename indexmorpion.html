@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/stylemorpion.css">
+    <title>PROJET MORPION</title>
+</head>
+
+<body>
+    
+    <header>
+        <h1>Projet Morpion</h1>
+    </header>
+    <main>
+        <span>
+        <h2><strong>Le jeu peut commencer !</strong></h2>
+    </span>
+    <img class="imagehaut" src="assets/images/image-morpion-un.png">
+        <div class="center">
+            <div>
+                <span id="switchSentence">Activer le mode 1 joueur</span>
+            </div>
+            <label class="switch">
+                <input type="checkbox" onclick="modeCpu()" >
+                <span class="slider round"></span>
+             </label>
+        </div>
+        <a href="indexpuissancequatre.html" class="lien">Aller jouer au puissance 4</a>
+        <table>
+            <tr>
+                <td onclick="displaySymbol(this)"></td>
+                <td onclick="displaySymbol(this)"></td>
+                <td onclick="displaySymbol(this)"></td>
+            </tr>
+            <tr>
+                <td onclick="displaySymbol(this)"></td>
+                <td onclick="displaySymbol(this)"></td>
+                <td onclick="displaySymbol(this)"></td>
+            </tr>
+            <tr>
+                <td onclick="displaySymbol(this)"></td>
+                <td onclick="displaySymbol(this)"></td>
+                <td onclick="displaySymbol(this)"></td>
+            </tr>
+        </table>
+        <p class="center"></p>
+       <form>
+        <button type="button" onclick="restart()">RESTART</button>
+       </form>
+       <img class="imagebas" src="assets/images/image-deux-morpion.png">
+    </main>
+
+    <script src="assets/js/mainmorpion.js"></script>
+</body>
+
+</html>
